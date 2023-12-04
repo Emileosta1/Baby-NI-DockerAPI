@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  frontend:
+    image: "babynife"
+    container_name: babynife-container
+   
+    ports:
+      - 3000:3000
+
+  backend:
+    image: "testdotnet"
+    container_name: dotnet-backend
+    ports:
+      - 8000:80
+
